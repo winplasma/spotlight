@@ -1,0 +1,9 @@
+{
+  "id": "com.winplasma.spotlight",
+  "name": "Spotlight Search",
+  "version": "1.0.0",
+  "author": "WinPlasma",
+  "description": "macOS-style app and file search overlay. Default hotkey: Alt+Space.",
+  "minHostVersion": "1.0.0",
+  "dllFileName": "plugin.dll"
+}
