@@ -9,10 +9,14 @@
     <UseWinUI>true</UseWinUI>
     <AssemblyName>plugin</AssemblyName>
     <RootNamespace>WinPlasma.Spotlight</RootNamespace>
+        <!-- Override RIDs to prevent Windows App SDK from injecting win10-* identifiers that break .NET 8.0.400+ SDK -->
+        <RuntimeIdentifiers>win-x64;win-x86;win-arm64</RuntimeIdentifiers>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\WinPlasma.SDK\WinPlasma.SDK.csproj" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240802000" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.250428001" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1" PrivateAssets="all" />
   </ItemGroup>
 </Project>
+
+
